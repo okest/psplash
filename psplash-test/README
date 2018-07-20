@@ -1,0 +1,18 @@
+PSPLASH
+=======
+
+PSplash is a userspace graphical boot splash screen for mainly
+embedded Linux devices supporting a 16bpp or 32bpp framebuffer. It has
+few dependencies (just libc), supports basic images and text and handles
+rotation. Its visual look is configurable by commandline arguments and basic
+source changes (mainly defines).
+
+Also included is a 'client' command utility for sending information to
+psplash such as boot progress information.
+
+
+
+1.替换一张图片
+psplash.c 文件替换图片资源头文件
+
+./make-image-header.sh aaa.bmp
